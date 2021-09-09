@@ -1,0 +1,177 @@
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:Connection created successfull.
+INFO:app:All posts are retrieved successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 02:55:28] "GET / HTTP/1.1" 200 -
+INFO:app:Connection created successfull.
+INFO:app:Metrics request is successfull.
+ERROR:app:Exception on /1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Educational\Cloud Native Nano Degree\myndprojects\project\techtrends\app.py", line 54, in post
+    app.logger.info('Post retreived successfully.'+'=%s'%post.title)
+AttributeError: 'sqlite3.Row' object has no attribute 'title'
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 02:55:52] "GET /1 HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:Connection created successfull.
+INFO:app:Metrics request is successfull.
+INFO:app:Post retreived successfully.=2020 CNCF Annual Report
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 02:57:47] "GET /1 HTTP/1.1" 200 -
+INFO:app:Connection created successfull.
+INFO:app:Metrics request is successfull.
+INFO:app:Post retreived successfully.=2020 CNCF Annual Report
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 02:58:49] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:Connection created successfull.
+INFO:app:Metrics request is successfull.
+INFO:app:=2020 CNCF Annual Report retreived successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 02:59:28] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:02:27] "GET /create HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:02:28] "POST /create HTTP/1.1" 200 -
+INFO:app:Connection created successfull.
+INFO:app:test submitted successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:03:13] "POST /create HTTP/1.1" 302 -
+INFO:app:Connection created successfull.
+INFO:app:All posts are retrieved successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:03:14] "GET / HTTP/1.1" 200 -
+INFO:app:Connection created successfull.
+INFO:app:Metrics request is successfull.
+INFO:app:test retreived successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:04:06] "GET /7 HTTP/1.1" 200 -
+INFO:app:Connection created successfull.
+INFO:app:All posts are retrieved successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:04:41] "GET / HTTP/1.1" 200 -
+INFO:app:Connection created successfull.
+INFO:app:Metrics request is successfull.
+INFO:app:test retreived successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:04:44] "GET /7 HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:Connection created successfull.
+INFO:app:All posts are retrieved successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:06:42] "GET / HTTP/1.1" 200 -
+INFO:app:Connection created successfull.
+INFO:app:CNCF Cloud Native Definition v1.0 retreived successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:06:46] "GET /5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:06:49] "GET /create HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:06:50] "POST /create HTTP/1.1" 200 -
+INFO:app:Connection created successfull.
+INFO:app:rrrr submitted successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:06:59] "POST /create HTTP/1.1" 302 -
+INFO:app:Connection created successfull.
+INFO:app:All posts are retrieved successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:06:59] "GET / HTTP/1.1" 200 -
+INFO:app:Connection created successfull.
+INFO:app:rrrr retreived successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:07:02] "GET /9 HTTP/1.1" 200 -
+INFO:app:About page rendered successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:07:04] "GET /about HTTP/1.1" 200 -
+INFO:app:Connection created successfull.
+INFO:app:All posts are retrieved successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:07:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:08:54] "GET /create HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:09:01] "POST /create HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:09:08] "POST /create HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:15:25] "POST /create HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:15:44] "POST /create HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:15:58] "POST /create HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:16:00] "POST /create HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:Connection created successfull.
+INFO:app:All posts are retrieved successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:21:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:21:49] "GET /create HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+ERROR:app:Exception on /create [POST]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Educational\Cloud Native Nano Degree\myndprojects\project\techtrends\app.py", line 71, in create
+    flash('Title is required!')
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 423, in flash
+    session["_flashes"] = flashes
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\local.py", line 351, in __setitem__
+    self._get_current_object()[key] = value
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\sessions.py", line 102, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:21:52] "POST /create HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:23:35] "POST /create HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:24:48] "POST /create HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:24:51] "POST /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:24:52] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:24:52] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:23] "POST /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:23] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:23] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:app:Connection created successfull.
+INFO:app:All posts are retrieved successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:30] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:32] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:32] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:33] "POST /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:34] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:app:Connection created successfull.
+INFO:app:jam 2 submitted successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:43] "POST /create HTTP/1.1" 302 -
+INFO:app:Connection created successfull.
+INFO:app:All posts are retrieved successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:43] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:app:Connection created successfull.
+INFO:app:jam 2 retreived successfully.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:46] "GET /10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:46] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:49] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:49] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:50] "POST /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:50] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:52] "POST /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:52] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:app:ERROR: Title not provided.
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:53] "POST /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Aug/2021 03:26:53] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:Connection created successfull.
+INFO:app:All posts are retrieved successfully.
+INFO:werkzeug:127.0.0.1 - - [06/Sep/2021 05:06:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Sep/2021 05:06:00] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Sep/2021 05:06:00] "GET /favicon.ico HTTP/1.1" 200 -

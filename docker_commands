@@ -1,0 +1,54 @@
+## Docker commands used to build the application 
+# docker build -t techtrends .
+
+
+## Docker commands used to run the application
+# docker run -d -p 7111:3111 techtrends
+
+
+## Docker commands used to get the application logs
+# docker logs 873dc9911f8a
+
+## Logs from the container running the TechTrends application
+##  * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+2021-09-09 22:10:23,945 INFO  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+2021-09-09 22:14:56,272 INFO Connection created successfull.
+2021-09-09 22:14:56,272 INFO All posts are retrieved successfully.
+2021-09-09 22:14:56,284 INFO 172.17.0.1 - - [09/Sep/2021 22:14:56] "GET / HTTP/1.1" 200 -
+2021-09-09 22:14:56,303 INFO 172.17.0.1 - - [09/Sep/2021 22:14:56] "GET /favicon.ico HTTP/1.1" 200 -
+2021-09-09 22:14:59,773 INFO Connection created successfull.
+2021-09-09 22:14:59,773 INFO All posts are retrieved successfully.
+2021-09-09 22:14:59,774 INFO 172.17.0.1 - - [09/Sep/2021 22:14:59] "GET / HTTP/1.1" 200 -
+2021-09-09 22:14:59,789 INFO 172.17.0.1 - - [09/Sep/2021 22:14:59] "GET /favicon.ico HTTP/1.1" 200 -
+2021-09-09 22:15:03,415 INFO Connection created successfull.
+2021-09-09 22:15:03,416 INFO 2020 CNCF Annual Report retreived successfully.
+2021-09-09 22:15:03,419 INFO 172.17.0.1 - - [09/Sep/2021 22:15:03] "GET /1 HTTP/1.1" 200 -
+2021-09-09 22:15:03,436 INFO 172.17.0.1 - - [09/Sep/2021 22:15:03] "GET /favicon.ico HTTP/1.1" 200 -
+2021-09-09 22:15:06,610 INFO Connection created successfull.
+2021-09-09 22:15:06,610 INFO All posts are retrieved successfully.
+2021-09-09 22:15:06,611 INFO 172.17.0.1 - - [09/Sep/2021 22:15:06] "GET / HTTP/1.1" 200 -
+2021-09-09 22:15:06,627 INFO 172.17.0.1 - - [09/Sep/2021 22:15:06] "GET /favicon.ico HTTP/1.1" 200 -
+2021-09-09 22:15:13,350 INFO About page rendered successfully.
+2021-09-09 22:15:13,354 INFO 172.17.0.1 - - [09/Sep/2021 22:15:13] "GET /about HTTP/1.1" 200 -
+2021-09-09 22:15:13,371 INFO 172.17.0.1 - - [09/Sep/2021 22:15:13] "GET /favicon.ico HTTP/1.1" 200 -
+2021-09-09 22:15:15,640 INFO 172.17.0.1 - - [09/Sep/2021 22:15:15] "GET /create HTTP/1.1" 200 -
+2021-09-09 22:15:15,656 INFO 172.17.0.1 - - [09/Sep/2021 22:15:15] "GET /favicon.ico HTTP/1.1" 200 -
+2021-09-09 22:15:18,293 WARNING ERROR: Title not provided.
+2021-09-09 22:15:18,294 INFO 172.17.0.1 - - [09/Sep/2021 22:15:18] "POST /create HTTP/1.1" 200 -
+2021-09-09 22:15:18,314 INFO 172.17.0.1 - - [09/Sep/2021 22:15:18] "GET /favicon.ico HTTP/1.1" 200 -
+2021-09-09 22:15:22,093 INFO Connection created successfull.
+2021-09-09 22:15:22,098 INFO t submitted successfully.
+2021-09-09 22:15:22,098 INFO 172.17.0.1 - - [09/Sep/2021 22:15:22] "POST /create HTTP/1.1" 302 -
+2021-09-09 22:15:22,102 INFO Connection created successfull.
+2021-09-09 22:15:22,102 INFO All posts are retrieved successfully.
+2021-09-09 22:15:22,103 INFO 172.17.0.1 - - [09/Sep/2021 22:15:22] "GET / HTTP/1.1" 200 -
+2021-09-09 22:15:22,119 INFO 172.17.0.1 - - [09/Sep/2021 22:15:22] "GET /favicon.ico HTTP/1.1" 200 -
+2021-09-09 22:15:24,260 INFO Connection created successfull.
+2021-09-09 22:15:24,260 INFO t retreived successfully.
+2021-09-09 22:15:24,261 INFO 172.17.0.1 - - [09/Sep/2021 22:15:24] "GET /7 HTTP/1.1" 200 -
+2021-09-09 22:15:24,280 INFO 172.17.0.1 - - [09/Sep/2021 22:15:24] "GET /favicon.ico HTTP/1.1" 200 -
+

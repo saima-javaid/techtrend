@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>{% block title %} Oops! {% endblock %}</h2>
+    <p> It looks like the URL you are trying to access has been changed or removed. Try using another or go back to the main page.</p><a href="{{ url_for('index')}}">Click here</a>
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>{% block title %} Oh Dear! {% endblock %}</h2>
+    <p> We caught an error. Message: {{error_message}} </p>
+{% endblock %}
