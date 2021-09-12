@@ -29,4 +29,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: techtrends:latest
+          tags: saimajavaid/techtrends:latest
