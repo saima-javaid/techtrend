@@ -1,0 +1,47 @@
+namespace:
+    name: sandbox
+ 
+image:
+    repository: saimajavaid/techtrends 
+    tag: latest
+    imagePullPolicy: IfNotPresent
+
+replicaCount: 1
+
+service:
+    ports:
+    - port: 4111
+      protocol: TCP
+      targetPort: 3111
+    type: ClusterIP
+
+containers:
+    ports: "containerPort: 3111"
+    
+resources:
+  requests:
+    cpu: 250m
+    memory: 64Mi
+  limits:
+    cpu: 500m
+    memory: 128Mi   
+    
+livenessProbe:
+    httpGet:
+      path: /healthz
+      port: 3111
+      httpHeaders:
+      - name: Custom-Header
+        value: Appcheck
+    initialDelaySeconds: 3
+    periodSeconds: 3
+    
+readinessProbe:
+    httpGet:
+      path: /healthz
+      port: 3111
+      httpHeaders:
+      - name: Custom-Header
+        value: Appcheck
+    initialDelaySeconds: 3
+    periodSeconds: 3
