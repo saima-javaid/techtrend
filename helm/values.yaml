@@ -9,10 +9,11 @@ image:
 replicaCount: 1
 
 service:
-    ports: "port: 4111"
+    port: 4111 
+
 
 containers:
-    ports: "containerPort: 3111"
+    port:  3111
     
 resources:
   requests:

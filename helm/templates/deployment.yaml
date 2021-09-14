@@ -23,7 +23,7 @@ spec:
         imagePullPolicy: {{.Values.imagePullPolicy}}
         name: techtrends
         ports:
-          {{.Values.containers.ports}}
+        - containerPort: {{.Values.containers.port}}
         resources:
 {{ toYaml .Values.resources | indent 12 }}
         livenessProbe:

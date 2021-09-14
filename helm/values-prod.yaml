@@ -3,7 +3,7 @@ namespace:
 image:
     imagePullPolicy: Always
 service:
-    ports: "port: 7111"
+    port: 7111
 
 replicaCount: 5
 
