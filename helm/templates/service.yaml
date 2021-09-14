@@ -8,10 +8,10 @@ metadata:
   namespace: {{.Values.namespace.name}}
 spec:
   ports:
-  - port: {{.Values.service.port}}
-    protocol: {{.Values.service.protocol}}
-    targetPort: {{.Values.service.targetPort}}
+    {{.Values.service.ports}}
+    protocol: TCP
+    targetPort: 3111
   selector:
     app: techtrends
     tag: latest
-  type: {{.Values.service.type}}
+  type: ClusterIP

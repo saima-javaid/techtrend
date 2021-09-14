@@ -9,11 +9,7 @@ image:
 replicaCount: 1
 
 service:
-    ports:
-    - port: 4111
-      protocol: TCP
-      targetPort: 3111
-    type: ClusterIP
+    ports: "port: 4111"
 
 containers:
     ports: "containerPort: 3111"
