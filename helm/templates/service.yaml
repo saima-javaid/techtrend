@@ -7,9 +7,8 @@ metadata:
   name: techtrends
   namespace: {{.Values.namespace.name}}
 spec:
-  ports:
-    ports:
-      port: {{.Values.service.port}}
+  ports:    
+    port: {{.Values.service.port}}
     protocol: TCP
     targetPort: 3111
   selector:
